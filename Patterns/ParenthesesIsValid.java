@@ -18,9 +18,7 @@ class Solution {
                 (deque.peek().equals("{") && sArray[i].equals("}")) || (deque.peek().equals("[") && sArray[i].equals("]"))))
                 deque.pop();
             else deque.push(sArray[i]);
-            System.out.println(deque.peek());
         }
-        System.out.println(deque.size());
         if (deque.size()==0)
             return true;
         else return false;

@@ -1,3 +1,10 @@
+/**
+ * CodingChallenge
+ * Implementation of Depth First Traversal in a graph.
+ *
+ * @author Arihant Jain
+ */
+
 import java.util.Deque;
 import java.util.Iterator;
 import java.util.LinkedList;

@@ -49,6 +49,7 @@ public class BreadthFirstSearch {
             System.out.println("Type in the number of edges of your directed graph:");
             int numEdges = scanner.nextInt();
             Graph graph = new Graph(numEdges);
+            System.out.println("Type the source and destinations for each edge:");
             for (int i=0; i<numEdges; i++)
                 graph.addEdge(scanner.nextInt(), scanner.nextInt());
             System.out.println("Type in the source of the bfs traversal:");

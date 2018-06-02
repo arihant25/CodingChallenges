@@ -1,3 +1,10 @@
+/**
+ * CodingChallenge
+ * To find the longest increasing subsequence of an unsorted array using dynamic programming.
+ *
+ * @author Arihant Jain
+ */
+
 public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
         System.out.println( "The LIC for the input array is: " +lIC(new int[]{10, 22, 9, 33, 21, 50, 41, 60}));

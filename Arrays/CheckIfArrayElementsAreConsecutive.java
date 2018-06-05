@@ -10,7 +10,7 @@
 public class CheckIfArrayElementsAreConsecutive {
     public static void main(String[] args) {
         CheckIfArrayElementsAreConsecutive check = new CheckIfArrayElementsAreConsecutive();
-        System.out.println(check.checkCons(new int[]{4, 3, 6, 2, 5, 1}));
+        System.out.println(check.checkCons(new int[]{5, 3, 6, 2, 4, 1}));
     }
 
     private boolean checkCons(int[] array) {

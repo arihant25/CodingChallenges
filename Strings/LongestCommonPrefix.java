@@ -1,13 +1,13 @@
 /**
  *LeetCodeProblems
  *To find the longest common prefix from an array of Strings.
- *Can use 2D array for optimization 
+ *Can use 2D array for optimization
  *
  *@author Arihant Jain
  */
 
-class Solution {
-    public String longestCommonPrefix(String[] strs) {
+class LongestCommonPrefix {
+    private static String longestCommonPrefix(String[] strs) {
         String answer = "";
         if (strs.length == 0)
             return "";
@@ -31,26 +31,9 @@ class Solution {
         }
         return answer;
     }
-}
 
-public class MainClass {
-    public static String[] stringToStringArray(String input) {
-        JsonArray jsonArray = JsonArray.readFrom(line);
-        String[] arr = new String[jsonArray.size()];
-        for (int i = 0; i < arr.length; i++) {
-          arr[i] = jsonArray.get(i).asString();
-      }
-      return arr;
-  }
-
-  public static void main(String[] args) throws IOException {
-    BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-    String line;
-    while ((line = in.readLine()) != null) {
-        String[] strs = stringToStringArray(line);
-        String ret = new Solution().longestCommonPrefix(strs);
-        String out = (ret);
-        System.out.print(out);
+    public static void main(String[] args) {
+        System.out.println(longestCommonPrefix(new String[] {"ASFSAFS", "ADFASFS"}));
     }
-}
+
 }

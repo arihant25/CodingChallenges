@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 /**
  *CodingChallenge
  *To find the length of the longest substring in a string.
@@ -5,8 +7,8 @@
  *@author Arihant Jain
  */
 
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
+class LengthOfLongestSubstring {
+    public static int lengthOfLongestSubstring(String s) {
         int answer = 0;
         if(s.length()>0) {
             String[] temp = s.split("");
@@ -17,7 +19,7 @@ class Solution {
                 for(int j=i; j<temp.length; j++){
                     if(!check.add(temp[j]))
                         break;
-                    max++;        
+                    max++;
                 }
                 if(max > answer)
                     answer = max;
@@ -25,24 +27,8 @@ class Solution {
         }
         return answer;
     }
-}
 
-public class MainClass {
-    public static String stringToString(String input) {
-        if (input == null) {
-            return "null";
-        }
-        return Json.value(input).toString();
-    }
-    
-    public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String line;
-        while ((line = in.readLine()) != null) {
-            String s = stringToString(line);
-            int ret = new Solution().lengthOfLongestSubstring(s);
-            String out = String.valueOf(ret);
-            System.out.print(out);
-        }
+    public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstring("ASFSAFS"));
     }
 }

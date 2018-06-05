@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  *LeetCodeProblems
  *To find the needle string from the string haystack.
@@ -5,8 +9,26 @@
  *@author Arihant Jain
  */
 
-class Solution {
-    public int strStr(String haystack, String needle) {
+public class StrStr {
+    public static String stringToString(String input) {
+        if (input == null) {
+            return "null";
+        }
+        return input.toString();
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        String line;
+        while ((line = in.readLine()) != null) {
+            String haystack = stringToString(line);
+            line = in.readLine();
+            String needle = stringToString(line);
+            System.out.print(strStr(haystack, needle));
+        }
+    }
+
+    public static int strStr(String haystack, String needle) {
         if (needle.equals(""))
             return 0;
         String[] hay = haystack.split("");
@@ -25,27 +47,5 @@ class Solution {
             }
         }
         return -1;
-    }
-}
-
-public class MainClass {
-    public static String stringToString(String input) {
-        if (input == null) {
-            return "null";
-        }
-        return Json.value(input).toString();
-    }
-    
-    public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String line;
-        while ((line = in.readLine()) != null) {
-            String haystack = stringToString(line);
-            line = in.readLine();
-            String needle = stringToString(line);
-            int ret = new Solution().strStr(haystack, needle);
-            String out = String.valueOf(ret);
-            System.out.print(out);
-        }
     }
 }

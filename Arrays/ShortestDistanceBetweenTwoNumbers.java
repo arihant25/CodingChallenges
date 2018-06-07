@@ -15,6 +15,8 @@ public class ShortestDistanceBetweenTwoNumbers {
     private static int sDis(int[] array, int x, int y) {
         int answer = Integer.MAX_VALUE;
         int answer2 = Integer.MAX_VALUE;
+
+        //find shortest distance from x to y
         int temp = -1;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == x)
@@ -23,6 +25,7 @@ public class ShortestDistanceBetweenTwoNumbers {
                 answer = i - temp;
         }
 
+        //find shortest distance from y to x
         temp = -1;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == y)
@@ -31,6 +34,7 @@ public class ShortestDistanceBetweenTwoNumbers {
                 answer2 = i - temp;
         }
 
+        //return min of both
         if (answer > answer2)
             return answer2;
         else return answer;

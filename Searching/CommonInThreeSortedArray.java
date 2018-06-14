@@ -1,3 +1,12 @@
+/**
+ * Coding Challenge
+ * To find all common elements from three sorted arrays.
+ * Time complexity: O(n + m + k)
+ * Space complexity: O(1)
+ *
+ * @author Arihant Jain
+ */
+
 public class CommonInThreeSortedArray {
     public static void main(String[] args) {
         int input1[] = {1, 5, 10, 20, 40, 80};

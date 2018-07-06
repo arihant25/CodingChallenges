@@ -4,7 +4,7 @@
  * Input is a m*n matrix.
  * To output, if there is a zero in the matrix then, the row and the column is set to zero.
  * Time complexity: O(m*n)
- * Space complexity: O(1)
+ * Space complexity: O(m+n)
  *
  * @author Arihant Jain
  */

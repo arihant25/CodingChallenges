@@ -27,24 +27,23 @@ public class AddNodesFromLinkedLists {
 
     private static Node addLinkedLists(Node node1, Node node2) {
         Node answerNode = new Node(0);
+        Node head = answerNode;
         int remainder = 0;
 
-        while (node1 != null || node2 != null) {
+        while (node1 != null || node2 != null || remainder != 0) {
             answerNode.data = node1.data + node2.data + remainder;
             if (answerNode.data > 9) {
                 remainder = 1;
                 answerNode.data = answerNode.data - 10;
-            } else {
-                remainder = 0;
-            }
-            System.out.println(answerNode.data);
+            } else remainder = 0;
+
             node1 = node1.next;
             node2 = node2.next;
-            if (node1 != null || node2 != null)
+            if (node1 != null || node2 != null || remainder != 0)
                 answerNode.addToList(0);
             answerNode = answerNode.next;
         }
-        return answerNode;
+        return head;
     }
 
     public static void main(String[] args) {

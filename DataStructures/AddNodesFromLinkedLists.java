@@ -1,7 +1,7 @@
 /**
  * Cracking the coding interview
  * Input are two linked lists.
- * To output, Nth node from last.
+ * To output, a node with addition of the linked lists.
  *
  * @author Arihant Jain
  */

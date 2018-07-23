@@ -11,7 +11,7 @@ import java.util.Map;
  * @author Arihant Jain
  */
 
-public class noPair {
+public class SingleElement {
     public static void main(String[] args) {
         System.out.println(singleNumberHashMap(new int[]{4, 1, 2, 1, 2}));
     }

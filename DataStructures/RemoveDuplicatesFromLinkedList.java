@@ -70,6 +70,21 @@ public class RemoveDuplicatesFromLinkedList {
         }
     }
 
+//    private static void removeDuplicatesNoBuffer(Node node) {
+//        Node head = node;
+//        Node previous = null;
+//        while (node != null) {
+//            Node runner = head;
+//            while (runner != node) {
+//                if (runner.data == node.data) {
+//                    previous.next = node.next;
+//                }
+//                previous = runner;
+//                runner = runner.next;
+//            }
+//        }
+//    }
+
     public static void main(String[] args) {
         Node node = new Node(10);
         node.addToList(10);

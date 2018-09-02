@@ -5,7 +5,7 @@ import java.util.Arrays;
  * To find the first missing positive integer.
  * Given an array with integers a1,..,an.
  * Time complexity: O(nlogn)
- * Note: To add dynamic programming solution.
+ * Note: To add a O(n) time solution.
  *
  * @author Arihant Jain
  */

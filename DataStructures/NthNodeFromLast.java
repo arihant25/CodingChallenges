@@ -26,25 +26,6 @@ public class NthNodeFromLast {
             n.next = last;
         }
 
-        //        delete a node from the linked list
-        Node deleteNode(Node head, int d) {
-            Node n = head;
-            if (n.data == d) {
-                return n.next;
-            }
-
-            while (n.next != null) {
-                if (n.next.data == d) {
-//                    ignored pointer to node that needs to be deleted from the list
-                    n.next = n.next.next;
-                    return head;
-                }
-                n = n.next;
-            }
-            System.out.println("Node not present in the list");
-            return head;
-        }
-
         //        simply print the linked list
         void printList(Node head) {
             while (head != null) {

@@ -2,6 +2,8 @@
  * CodingChallenge
  * Given a list of integers, write a function that returns the largest sum of non-adjacent numbers.
  * Numbers can be 0 or negative.
+ * Time complexity: O(n)
+ * Space complexity: O(1)
  *
  * @author Arihant Jain
  */

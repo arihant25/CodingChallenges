@@ -9,7 +9,6 @@
  * @author Arihant Jain
  */
 
-
 public class MinimumNumberCoins {
     public static void main(String[] args) {
         System.out.println(minimumCoins(16));

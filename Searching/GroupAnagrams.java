@@ -2,6 +2,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * LeetcodeProblems
+ * Given an array of strings, group anagrams together.
+ *
+ * @author Arihant Jain
+ */
+
 public class GroupAnagrams {
     public static void main(String[] args) {
         System.out.println(groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"}));
